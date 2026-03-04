@@ -1,0 +1,32 @@
+{
+  "name": "@streeio-core/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@streeio-core/auth": "workspace:*",
+    "@streeio-core/schemas": "workspace:*",
+    "@streeio-core/db": "workspace:*",
+    "@streeio-core/emails": "workspace:*",
+    "@streeio-core/env": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@types/pg": "^8.16.0",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "next": "catalog:",
+    "resend": "^6.9.1",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@streeio-core/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
