@@ -1,0 +1,25 @@
+{
+  "name": "@streeio-core/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@streeio-core/db": "workspace:*",
+    "@streeio-core/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:",
+    "drizzle-orm": "catalog:"
+  },
+  "devDependencies": {
+    "@streeio-core/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
