@@ -1,0 +1,40 @@
+import type { Client } from "@/types/client";
+
+export const initialClients: Client[] = [
+  {
+    id: "1",
+    companyName: "Acme Corp",
+    contactPerson: "Alice Smith",
+    email: "alice@acme.com",
+    phoneNumber: "+1 555-0100",
+    status: "Active",
+    agreementStartDate: "2026-01-01",
+    agreementEndDate: "2027-01-01",
+    createdAt: "2026-01-01T10:00:00Z",
+    updatedAt: "2026-01-01T10:00:00Z",
+  },
+  {
+    id: "2",
+    companyName: "Globex Inc",
+    contactPerson: "Bob Johnson",
+    email: "bob@globex.com",
+    phoneNumber: "+1 555-0200",
+    status: "Pending",
+    agreementStartDate: "2026-02-15",
+    agreementEndDate: "2027-02-14",
+    createdAt: "2026-02-10T09:30:00Z",
+    updatedAt: "2026-02-10T09:30:00Z",
+  },
+  {
+    id: "3",
+    companyName: "Initech",
+    contactPerson: "Charlie Davis",
+    email: "charlie@initech.com",
+    phoneNumber: "+1 555-0300",
+    status: "Deactivated",
+    agreementStartDate: "2025-06-01",
+    agreementEndDate: "2026-05-31",
+    createdAt: "2025-05-20T14:15:00Z",
+    updatedAt: "2026-01-10T11:00:00Z",
+  },
+];
